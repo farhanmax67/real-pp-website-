@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn chess with structured lessons from beginner to intermediate level">
+    <title>Learn Chess - Chess Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="chess-icon">♔</span>
+                <span class="brand-text">Chess Academy</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html" class="active">Learn Chess</a></li>
+                <li><a href="life-skills.html">Life Skills</a></li>
+                <li><a href="chess-club.html">Chess Club</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Learn Chess</h1>
+            <p>Structured lessons designed for beginners and intermediate players. Learn at your own pace and build your chess skills step by step.</p>
+        </div>
+    </section>
+
+    <!-- Lessons Container -->
+    <section class="lessons-section">
+        <div class="container">
+            <!-- Lesson Navigation -->
+            <div class="lesson-nav">
+                <button class="lesson-tab active" data-lesson="basics">Basics</button>
+                <button class="lesson-tab" data-lesson="pieces">Pieces</button>
+                <button class="lesson-tab" data-lesson="rules">Rules</button>
+                <button class="lesson-tab" data-lesson="openings">Openings</button>
+                <button class="lesson-tab" data-lesson="tactics">Tactics</button>
+                <button class="lesson-tab" data-lesson="strategy">Strategy</button>
+            </div>
+
+            <!-- Lesson Content -->
+            <div class="lesson-content">
+                <!-- Basics Lesson -->
+                <div class="lesson-panel active" id="basics">
+                    <h2>Chess Basics</h2>
+                    <div class="lesson-text">
+                        <h3>What is Chess?</h3>
+                        <p>Chess is a two-player strategy game played on an 8x8 board with 64 squares. Each player starts with 16 pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns.</p>
+                        
+                        <h3>The Chessboard</h3>
+                        <p>The chessboard has 64 squares arranged in an 8x8 grid. The squares alternate between light and dark colors. When setting up the board, the bottom-right square should be light-colored.</p>
+                        
+                        <div class="chess-board-demo">
+                            <div class="board-placeholder">
+                                <p>Chessboard Diagram</p>
+                                <p class="board-note">[Visual: 8x8 chessboard with alternating light/dark squares]</p>
+                            </div>
+                        </div>
+
+                        <h3>Setting Up the Board</h3>
+                        <p>Place the board so each player has a light square on their right. The pieces are arranged as follows:</p>
+                        <ul>
+                            <li><strong>Back row (from left to right):</strong> Rook, Knight, Bishop, Queen, King, Bishop, Knight, Rook</li>
+                            <li><strong>Front row:</strong> Eight pawns</li>
+                        </ul>
+                        <p><strong>Remember:</strong> The queen always starts on her own color (white queen on white square, black queen on black square).</p>
+
+                        <div class="reflection-box">
+                            <h4>💭 Reflection Question</h4>
+                            <p>Why do you think chess uses a board with alternating colors? How might this help players during the game?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pieces Lesson -->
+                <div class="lesson-panel" id="pieces">
+                    <h2>Understanding Chess Pieces</h2>
+                    <div class="lesson-text">
+                        <h3>The King ♔</h3>
+                        <p>The king is the most important piece. You lose if your king is captured (checkmated). The king moves one square in any direction: horizontally, vertically, or diagonally.</p>
+                        <p><strong>Life Skill Connection:</strong> Protecting your king teaches you to prioritize what's most important and think about safety and security.</p>
+
+                        <h3>The Queen ♕</h3>
+                        <p>The queen is the most powerful piece. She can move any number of squares in any direction: horizontally, vertically, or diagonally.</p>
+                        <p><strong>Life Skill Connection:</strong> The queen's versatility shows the value of adaptability and having multiple options in problem-solving.</p>
+
+                        <h3>The Rook ♖</h3>
+                        <p>The rook moves any number of squares horizontally or vertically (in straight lines).</p>
+                        <p><strong>Life Skill Connection:</strong> Rooks teach us about direct action and clear, straightforward approaches to goals.</p>
+
+                        <h3>The Bishop ♗</h3>
+                        <p>The bishop moves any number of squares diagonally. Each player starts with two bishops: one on light squares and one on dark squares.</p>
+                        <p><strong>Life Skill Connection:</strong> Bishops show us that different perspectives (light vs. dark squares) can both be valuable.</p>
+
+                        <h3>The Knight ♘</h3>
+                        <p>The knight moves in an L-shape: two squares in one direction, then one square perpendicular. Knights are the only pieces that can "jump over" other pieces.</p>
+                        <p><strong>Life Skill Connection:</strong> Knights teach us that sometimes unconventional approaches can be effective and that obstacles can be overcome creatively.</p>
+
+                        <h3>The Pawn ♙</h3>
+                        <p>Pawns move forward one square at a time (or two squares on their first move). They capture diagonally. If a pawn reaches the opposite end of the board, it can be promoted to any piece (usually a queen).</p>
+                        <p><strong>Life Skill Connection:</strong> Pawns show us that small, consistent progress can lead to great achievements. They remind us that everyone starts somewhere and can grow.</p>
+
+                        <div class="interactive-quiz">
+                            <h4>🧩 Quick Check</h4>
+                            <p>Which piece can move in an L-shape?</p>
+                            <button class="quiz-option" data-correct="false">Bishop</button>
+                            <button class="quiz-option" data-correct="true">Knight</button>
+                            <button class="quiz-option" data-correct="false">Rook</button>
+                            <p class="quiz-feedback"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rules Lesson -->
+                <div class="lesson-panel" id="rules">
+                    <h2>Chess Rules</h2>
+                    <div class="lesson-text">
+                        <h3>How to Win</h3>
+                        <p>You win by checkmating your opponent's king. This means the king is under attack (in check) and cannot escape.</p>
+
+                        <h3>Check and Checkmate</h3>
+                        <p><strong>Check:</strong> When your king is under attack, you must get out of check on your next move. You can do this by:</p>
+                        <ul>
+                            <li>Moving the king to a safe square</li>
+                            <li>Blocking the attack with another piece</li>
+                            <li>Capturing the attacking piece</li>
+                        </ul>
+                        <p><strong>Checkmate:</strong> When the king is in check and cannot escape, the game ends. The player who checkmates wins.</p>
+
+                        <h3>Special Rules</h3>
+                        <p><strong>Castling:</strong> A special move involving the king and a rook. The king moves two squares toward a rook, and the rook jumps over to the square next to the king. You can only castle if neither piece has moved, there are no pieces between them, and the king is not in check.</p>
+                        
+                        <p><strong>En Passant:</strong> A special pawn capture that can occur when a pawn moves two squares forward and lands next to an opponent's pawn.</p>
+                        
+                        <p><strong>Pawn Promotion:</strong> When a pawn reaches the opposite end of the board, it can be promoted to any piece (usually a queen).</p>
+
+                        <h3>Draws</h3>
+                        <p>A game can end in a draw (tie) in several ways:</p>
+                        <ul>
+                            <li>Stalemate: A player cannot make a legal move but is not in check</li>
+                            <li>Insufficient material: Neither player has enough pieces to checkmate</li>
+                            <li>Threefold repetition: The same position occurs three times</li>
+                            <li>Agreement: Both players agree to a draw</li>
+                        </ul>
+
+                        <div class="reflection-box">
+                            <h4>💭 Reflection Question</h4>
+                            <p>Why do you think chess has rules about check and checkmate? How do rules help us in games and in life?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Openings Lesson -->
+                <div class="lesson-panel" id="openings">
+                    <h2>Chess Openings</h2>
+                    <div class="lesson-text">
+                        <h3>What is an Opening?</h3>
+                        <p>The opening is the first phase of the game, usually the first 10-15 moves. Good opening play sets up your pieces for the middle game and helps control the center of the board.</p>
+
+                        <h3>Opening Principles</h3>
+                        <ol>
+                            <li><strong>Control the Center:</strong> The center squares (e4, e5, d4, d5) are important because pieces placed there have more mobility.</li>
+                            <li><strong>Develop Your Pieces:</strong> Get your knights and bishops into active positions early.</li>
+                            <li><strong>Castle Early:</strong> Protect your king by castling, usually within the first 10 moves.</li>
+                            <li><strong>Don't Move the Same Piece Twice:</strong> Develop different pieces rather than moving one piece multiple times.</li>
+                            <li><strong>Don't Bring Out the Queen Too Early:</strong> The queen is powerful but can be attacked easily if brought out too soon.</li>
+                        </ol>
+
+                        <h3>Popular Beginner Openings</h3>
+                        <p><strong>Italian Game:</strong> 1. e4 e5 2. Nf3 Nc6 3. Bc4 - A solid opening that develops pieces quickly.</p>
+                        <p><strong>Ruy Lopez:</strong> 1. e4 e5 2. Nf3 Nc6 3. Bb5 - One of the most popular and respected openings.</p>
+                        <p><strong>Queen's Gambit:</strong> 1. d4 d5 2. c4 - A strategic opening focusing on controlling the center.</p>
+
+                        <div class="chess-board-demo">
+                            <div class="board-placeholder">
+                                <p>Opening Position Example</p>
+                                <p class="board-note">[Visual: Chessboard showing Italian Game opening position]</p>
+                            </div>
+                        </div>
+
+                        <div class="reflection-box">
+                            <h4>💭 Reflection Question</h4>
+                            <p>How do opening principles (like controlling the center) relate to planning and preparation in real life? Can you think of examples?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tactics Lesson -->
+                <div class="lesson-panel" id="tactics">
+                    <h2>Chess Tactics</h2>
+                    <div class="lesson-text">
+                        <h3>What are Tactics?</h3>
+                        <p>Tactics are short-term sequences of moves that gain an advantage, such as winning material or checkmating. Tactics are the building blocks of chess skill.</p>
+
+                        <h3>Common Tactical Patterns</h3>
+                        
+                        <h4>Fork</h4>
+                        <p>A fork occurs when one piece attacks two or more enemy pieces at the same time. Knights are excellent at forking because of their unique movement.</p>
+                        <p><strong>Life Skill Connection:</strong> Forks teach us to look for opportunities where one action can achieve multiple goals.</p>
+
+                        <h4>Pin</h4>
+                        <p>A pin occurs when a piece cannot move because it would expose a more valuable piece behind it. Bishops, rooks, and queens can create pins.</p>
+                        <p><strong>Life Skill Connection:</strong> Pins show us how constraints can limit our options and the importance of protecting valuable resources.</p>
+
+                        <h4>Skewer</h4>
+                        <p>Similar to a pin, but the more valuable piece is in front. When it moves, the less valuable piece behind is captured.</p>
+
+                        <h4>Discovered Attack</h4>
+                        <p>When moving one piece reveals an attack by another piece behind it. This can be very powerful!</p>
+
+                        <h4>Double Check</h4>
+                        <p>When two pieces attack the enemy king simultaneously. The king must move (cannot block or capture both).</p>
+
+                        <div class="interactive-quiz">
+                            <h4>🧩 Tactics Puzzle</h4>
+                            <p>In this position, white can win material with a fork. Can you spot it?</p>
+                            <div class="chess-board-demo">
+                                <div class="board-placeholder">
+                                    <p>Tactics Puzzle Position</p>
+                                    <p class="board-note">[Visual: Chessboard showing a fork opportunity]</p>
+                                </div>
+                            </div>
+                            <p class="puzzle-hint">Hint: Look for a knight move that attacks two pieces!</p>
+                        </div>
+
+                        <div class="reflection-box">
+                            <h4>💭 Reflection Question</h4>
+                            <p>How does recognizing patterns in chess help you recognize patterns in other areas of life? Can you think of examples?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy Lesson -->
+                <div class="lesson-panel" id="strategy">
+                    <h2>Basic Chess Strategy</h2>
+                    <div class="lesson-text">
+                        <h3>What is Strategy?</h3>
+                        <p>While tactics are short-term combinations, strategy is the long-term plan. Good strategy involves understanding the position and making plans based on the strengths and weaknesses of both sides.</p>
+
+                        <h3>Key Strategic Concepts</h3>
+                        
+                        <h4>Piece Activity</h4>
+                        <p>Active pieces are more valuable than passive ones. Try to place your pieces on squares where they control important areas and have many options.</p>
+
+                        <h4>Pawn Structure</h4>
+                        <p>The arrangement of pawns affects the game. Weak pawns (isolated, doubled, or backward) can be targets. Strong pawn structures support your pieces.</p>
+
+                        <h4>King Safety</h4>
+                        <p>Always consider your king's safety. An exposed king is vulnerable to attacks. Keep your king protected, especially in the opening and middle game.</p>
+
+                        <h4>Material vs. Position</h4>
+                        <p>Sometimes it's worth sacrificing material (giving up a piece) for a better position or attack. This requires careful calculation and judgment.</p>
+
+                        <h4>Time (Tempo)</h4>
+                        <p>Each move is valuable. Don't waste moves. Try to develop your pieces efficiently and make moves that serve multiple purposes.</p>
+
+                        <h3>Planning</h3>
+                        <p>Good chess players always have a plan. Ask yourself:</p>
+                        <ul>
+                            <li>What are the weaknesses in my opponent's position?</li>
+                            <li>What are the strengths of my position?</li>
+                            <li>What is my opponent trying to do?</li>
+                            <li>What is the best way to improve my position?</li>
+                        </ul>
+
+                        <div class="reflection-box">
+                            <h4>💭 Reflection Question</h4>
+                            <p>How does planning ahead in chess relate to setting goals and making plans in your academic and personal life? What can chess teach us about long-term thinking?</p>
+                        </div>
+
+                        <div class="lesson-completion">
+                            <h3>🎉 Congratulations!</h3>
+                            <p>You've completed the basic lessons! Continue practicing and exploring more advanced concepts. Remember to connect what you learn to real-world skills.</p>
+                            <a href="resources.html" class="btn btn-primary">Explore More Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chess Academy</h3>
+                    <p>Empowering students through chess education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="learn.html">Learn Chess</a></li>
+                        <li><a href="life-skills.html">Life Skills</a></li>
+                        <li><a href="chess-club.html">Chess Club</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chess Academy. Educational purpose - IB MYP Personal Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

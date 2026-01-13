@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us and share your feedback about the chess program">
+    <title>Contact & Feedback - Chess Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="chess-icon">♔</span>
+                <span class="brand-text">Chess Academy</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn Chess</a></li>
+                <li><a href="life-skills.html">Life Skills</a></li>
+                <li><a href="chess-club.html">Chess Club</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact & Feedback</h1>
+            <p>We'd love to hear from you! Share your thoughts, suggestions, learning preferences, or questions about the chess program.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Feedback Form -->
+                <div class="form-container">
+                    <h2>Share Your Feedback</h2>
+                    <p>Your input helps us improve the program and make it better for everyone. All feedback is welcome!</p>
+                    
+                    <form id="feedbackForm" class="feedback-form">
+                        <div class="form-group">
+                            <label for="name">Your Name (Optional)</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age Range</label>
+                            <select id="age" name="age">
+                                <option value="">Select age range</option>
+                                <option value="8-10">8-10 years</option>
+                                <option value="11-13">11-13 years</option>
+                                <option value="14-16">14-16 years</option>
+                                <option value="17-18">17-18 years</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skill-level">Chess Skill Level</label>
+                            <select id="skill-level" name="skill-level">
+                                <option value="">Select skill level</option>
+                                <option value="beginner">Complete Beginner</option>
+                                <option value="novice">Novice (Know the rules)</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="learning-style">Learning Style Preference</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="learning-style" value="visual">
+                                    <span>Visual (diagrams, videos, images)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="learning-style" value="textual">
+                                    <span>Textual (reading, written explanations)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="learning-style" value="interactive">
+                                    <span>Interactive (puzzles, quizzes, hands-on)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="learning-style" value="self-paced">
+                                    <span>Self-paced (learn at your own speed)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedback-type">What would you like to share?</label>
+                            <select id="feedback-type" name="feedback-type">
+                                <option value="">Select type</option>
+                                <option value="suggestion">Suggestion for improvement</option>
+                                <option value="question">Question about the program</option>
+                                <option value="compliment">Positive feedback</option>
+                                <option value="concern">Concern or issue</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Share your thoughts, suggestions, or questions here..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-preference">How would you like us to respond? (Optional)</label>
+                            <select id="contact-preference" name="contact-preference">
+                                <option value="">No response needed</option>
+                                <option value="email">Email</option>
+                                <option value="chess-club">At chess club meeting</option>
+                                <option value="website">Post response on website</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                    </form>
+
+                    <div id="form-success" class="form-message success-message" style="display: none;">
+                        <h3>✓ Thank You!</h3>
+                        <p>Your feedback has been received. We appreciate you taking the time to share your thoughts!</p>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Other Ways to Connect</h2>
+                    
+                    <div class="info-card">
+                        <h3>📧 General Inquiries</h3>
+                        <p>For general questions about the chess program, please use the feedback form above or reach out at chess club meetings.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>👥 Chess Club Meetings</h3>
+                        <p>The best way to connect is at our weekly chess club sessions. Come join us and meet the community!</p>
+                        <a href="chess-club.html" class="btn btn-outline">Learn About Chess Club</a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>💡 Suggestions Welcome</h3>
+                        <p>We're always looking to improve! Whether it's about the website, lessons, or club activities, your ideas matter.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🎓 Educational Purpose</h3>
+                        <p>This website is part of an IB MYP Personal Project focused on empowering students through chess education. Your participation helps make this project meaningful!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chess Academy</h3>
+                    <p>Empowering students through chess education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="learn.html">Learn Chess</a></li>
+                        <li><a href="life-skills.html">Life Skills</a></li>
+                        <li><a href="chess-club.html">Chess Club</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chess Academy. Educational purpose - IB MYP Personal Project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
